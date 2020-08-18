@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "minimal-testing",
+  "version": "1.0.0",
+  "description": "Template for minimal testing configuration",
+  "repository": "git@github.com:bmealhouse/minimal-testing.git",
+  "author": "Brent Mealhouse <bmealhouse@gmail.com>",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.10",
+    "husky": "4.2.5",
+    "jest": "26.4.0",
+    "prettier": "2.0.5",
+    "ts-jest": "26.2.0",
+    "typescript": "3.9.7"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
